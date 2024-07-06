@@ -1,0 +1,1453 @@
+@import'base/base';
+body{
+    overflow-x: hidden;
+}
+main{
+    width: 100vw;
+}
+header{
+    width: 63vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    right: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 3.2vw ;
+    z-index: 10;
+
+}
+nav{
+    margin-bottom: 1vw;
+}
+.nav{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+      font-size: 0.9vw;
+      color: white; 
+}
+.signup{
+    height:2.5vw;
+    width: 6.25vw;
+    border-radius: 2.7vw;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0); 
+    padding: 0.6vw auto;
+    margin-left: 1.3vw;
+    
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 1;
+
+    
+}
+.filter{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url(./image/Bitmap.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(1.4);
+    z-index:2 ;
+    opacity: 70%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+h1{
+  text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 4vw;
+    color: white;
+    line-height: 1.2em;
+    z-index: 3;
+
+}
+.about{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2vw;
+    color: white;
+    line-height: 1.2em;
+    text-align: center;
+    margin-top: 2.7vw;
+    margin-bottom: 2.3vw;
+    z-index: 4;
+}
+.button{
+    width: 15.6vw;
+    height: 2.7vw;
+    border-radius: 2.7vw;
+    border:1px solid #FF4E50 ;
+    background-color: #FF4E50;
+    z-index: 5;
+    &__text{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1vw;
+        color: white; 
+        text-decoration: none;  
+    }
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: white;
+    margin-top: 6vw;
+}
+
+h2{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.8vw;
+    color: #444444;
+    margin-top: 6.2vw;
+    margin-bottom: 2.15vw;
+}
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 69.3vw;
+    justify-content: space-between;
+    &__cart{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        height: 27.7vw;
+        width:20.8vw ;
+        background-image: url(image/Step\ 1\ image\ \(1\).jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 17.4vw;
+       margin-bottom: 1.4vw;
+    }
+    
+}
+.step{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.8vw;
+    height: 1.4vw;
+    border-radius: 2.7vw;
+    border:1px solid #FF4E50 ;
+    background-color: #FF4E50;
+    margin-bottom: 1.4vw;
+    &__regular{
+        color: white; 
+        text-decoration: none; 
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 0.7vw;
+      
+    }
+}
+h3{
+    text-align:start;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6vw;
+    color: white;
+    line-height: 1.2em;
+    margin-bottom: 1.6vw;
+}
+.lightroboto{
+    font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    font-size: 0.9vw;
+    color: white;
+    line-height: 1.2em;
+    letter-spacing: 0.03vw;
+}
+.two{
+    background-image: url(image/Step\ 1\ image\ \(2\).jpg);
+}
+.three{
+    background-image: url(image/Step\ 1\ image.jpg) 
+}
+.wrapp{
+    display: flex;
+    flex-direction: row;
+    width: 69.3vw;
+    justify-content: space-between;
+    &__person {
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+}
+.people{
+    position: relative;
+    display: block;
+    border-radius: 50%;
+    width:8.3vw ;
+    height: 8.3vw;
+    background-image: url(image/Bitmap\ \(3\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__wrap{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        width: 2.2vw;
+        height: 2.2vw;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: 5px solid #ffff ;
+        background-color: #FF4E50;
+        
+    }
+}
+.green{
+    background-color: #19D4CA;
+}
+.orange{
+    background-color: #FFA710;
+}
+.blu{
+    background-color: #667DF3;
+}
+.mari{
+    background-image: url(image/Bitmap\ \(2\).jpg);
+}
+.diana{
+    background-image: url(image/Bitmap\ \(1\).jpg); 
+}
+.christopher{
+    background-image: url(image/Bitmap\ \(4\).jpg);
+}
+img{
+    width: 1.1vw;
+    height:  1.1vw;
+}
+.gray{
+    color: #444444;
+    font-size: 0.9vw;
+    text-align: center;
+    margin-top: 1.2vw;
+}
+.dark{
+    color: #666666;
+    text-align: center;
+    width: 13.8vw;
+}
+.choice{
+    height:2.8vw ;
+    width:12.5vw ;
+    border-radius:2.7vw ;
+    border: 2px solid #FF4E50;
+    background-color: white;
+    margin-top: 2.5vw;
+    &__text{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1vw;
+        color: #FF4E50; 
+        text-decoration: none; 
+    }
+}
+
+
+.grid{ width: 69.3vw;
+    display: grid;
+    grid-template-columns: 20.8vw 20.8vw 20.8vw 20.8vw ;
+    grid-template-rows: 21.5vw 21.5vw 21.5vw auto;
+    gap: 1.4vw 1.4vw;
+}
+.image{
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2; 
+    background-color: black;
+    z-index: 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   }
+   .blackfilter{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-image: url(image/Object.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(1.4);
+    z-index:2 ;
+    opacity: 70%;
+   
+   }
+ 
+.smoll{
+    font-size: 1.5vw;
+    z-index: 4;
+}
+.health{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.healtha{
+    background-image: url(image/Object\ \(3\).jpg);
+   }
+.extreme{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.expeditions{
+    background-image: url(image/Object\ \(1\).jpg);
+}
+.game{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.play{
+    background-image: url(image/Object\ \(2\).jpg)
+}
+.culture{
+    grid-column: 2/4;
+    grid-row: 2/3; 
+}
+.education{
+    background-image: url(image/Object\ \(4\).jpg)
+}
+.relaxation{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.enjoimet{
+    background-image: url(image/Object\ \(5\).jpg) 
+}
+.trevelling{
+    grid-column:3/4;
+    grid-row: 3/4;
+}
+.trevel{
+    background-image: url(image/Object\ \(6\).jpg) 
+}
+h4{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.25vw;
+    color: #666666;
+    line-height: 1.2em;
+    text-align: center;
+    margin-bottom: 1.7svw;
+}
+.information{
+    width:20.8vw ;
+    height:2.7vw ;
+    border: 1px solid #D4D4D4;
+    color:#999999 ;
+    border-radius:0.2vw;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9vw;
+    text-align: start;
+    padding-left: 1vw;
+}
+.search{
+    height:2.7vw ;
+    width:11.9vw ;
+    background-color:#FF4E50 ;
+    border-radius:2.7vw;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1vw;
+    color: white; 
+}
+
+
+footer{
+    border-color:#FF4E50 ;
+    border-style: solid none none;
+    border-width: 2px;
+    margin-top: 8.9vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vw;
+    padding-bottom: 2.5vw;
+}
+   
+.wrapperfooter{
+    display: flex;
+    width: 65.5vw;
+    height: 50vh;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    &__column{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+h5{
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 1vw;
+    color: #FF4E50; 
+}
+.black{
+    font-size: 0.9vw;
+    font-weight: 700;
+    color: #444444;
+    margin-bottom: 0.76vw;
+}
+.light{
+    font-size: 0.7vw;
+    font-weight: 700;
+    color: #CCCCCC;
+    text-align: end;
+    margin-bottom: 0.5vw;
+}
+.logo{
+    width:7.63vw ;
+    height:1.6vw;
+}
+.thin{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9vw; 
+    color: #CCCCCC;
+    line-height: 1.8vw;
+}
+
+
+@media screen and (max-width: 780px) {
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        width: 86.4vw;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        right: 0;
+        left: 0;
+        margin: auto;
+        margin-top: 3.2vw ;
+        z-index: 10;
+    
+    }
+    nav{
+        margin-bottom: 0vw;
+    }
+    .nav{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+          font-size: 1.8vw;
+          color: white; 
+    }
+    .signup{
+        height:4.7vw;
+        width: 11.7vw;
+        border-radius: 2.7vw;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0); 
+        padding: 0.6vw auto;
+        margin-left: 1.3vw;
+        
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: black;
+        z-index: 1;
+    
+        
+    }
+    .filter{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-image: url(./image/Bitmap.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: contrast(1.4);
+        z-index:2 ;
+        opacity: 70%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    h1{
+      text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 6.7vw;
+        color: white;
+        line-height: 1.2em;
+        z-index: 3;
+    
+    }
+    .about{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 3.1vw;
+        color: white;
+        line-height: 1.2em;
+        text-align: center;
+        margin-top: 2.7vw;
+        margin-bottom: 2.3vw;
+        z-index: 4;
+    }
+    .button{
+        width: 29.2vw;
+        height: 5.2vw;
+        border-radius: 2.7vw;
+        border:1px solid #FF4E50 ;
+        background-color: #FF4E50;
+        z-index: 5;
+        &__text{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.8vw;
+            color: white; 
+            text-decoration: none;  
+        }
+    }
+    .work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        background-color: white;
+        margin-top: 6vw;
+    }
+    
+    h2{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 2.8vw;
+        color: #444444;
+        margin-top: 6.2vw;
+        margin-bottom: 2.15vw;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        width: 95vw;
+        justify-content: space-between;
+        &__cart{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            height: 52vw;
+            width:30.6vw ;
+            background-image: url(image/Step\ 1\ image\ \(1\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            width: 25.4vw;
+           margin-bottom: 2.1vw;
+        }
+        
+    }
+    .step{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 9.1vw;
+        height: 2.6vw;
+        border-radius: 2.7vw;
+        border:1px solid #FF4E50 ;
+        background-color: #FF4E50;
+        margin-bottom: 5.2vw;
+        &__regular{
+            color: white; 
+            text-decoration: none; 
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 1.3vw;
+          
+        }
+    }
+    h3{
+        text-align:start;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3.1vw;
+        color: white;
+        line-height: 0.6em;
+        margin-bottom: 3.6vw;
+    }
+    .lightroboto{
+        font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+        font-size: 1.8vw;
+        color: white;
+        line-height: 1.2em;
+        letter-spacing: 0.03vw;
+    }
+    .two{
+        background-image: url(image/Step\ 1\ image\ \(2\).jpg);
+    }
+    .three{
+        background-image: url(image/Step\ 1\ image.jpg) 
+    }
+    .wrapp{
+        display: flex;
+        flex-direction: row;
+        width: 64vw;
+        justify-content: space-between;
+        flex-wrap: wrap;
+       margin-top: 4.5vw;
+        &__person {
+            width: 30.6vw;
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+           margin-bottom: 7vw;
+        }
+    }
+    .people{
+        position: relative;
+        display: block;
+        border-radius: 50%;
+        width:15.6vw ;
+        height: 15.6vw;
+        background-image: url(image/Bitmap\ \(3\).jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__wrap{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            width: 4.15vw;
+            height: 4.15vw;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 5px solid #ffff ;
+            background-color: #FF4E50;
+            
+        }
+    }
+    .green{
+        background-color: #19D4CA;
+    }
+    .orange{
+        background-color: #FFA710;
+    }
+    .blu{
+        background-color: #667DF3;
+    }
+    .mari{
+        background-image: url(image/Bitmap\ \(2\).jpg);
+    }
+    .diana{
+        background-image: url(image/Bitmap\ \(1\).jpg); 
+    }
+    .christopher{
+        background-image: url(image/Bitmap\ \(4\).jpg);
+    }
+    img{
+        width: 2.1vw;
+        height:2.1vw;
+    }
+    .gray{
+        color: #444444;
+        font-size: 1.8vw;
+        text-align: center;
+        margin-top: 2.6vw;
+    }
+    .dark{
+        width: auto;
+        height: auto;
+        color: #666666;
+        text-align: center;
+        
+    }
+    .choice{
+        height:5.2vw ;
+        width:23.4vw ;
+        border-radius:2.7vw ;
+        border: 2px solid #FF4E50;
+        background-color: white;
+        margin-top: 5.2vw;
+        &__text{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 1.8vw;
+            color: #FF4E50; 
+            text-decoration: none; 
+        }
+    }
+    
+    
+    .grid{ width: 98.8vw;
+        display: grid;
+        grid-template-columns: 30.6vw 30.6vw 30.6vw 30.6vw ;
+        grid-template-rows:40.2vw 40.2vw 40.2vw  auto;
+        gap: 2.5vw 2.5vw;
+        margin-top: 4.5vw;
+    }
+    .image{
+        position: relative;
+        grid-column: 1/2;
+        grid-row: 1/2; 
+        background-color: black;
+        z-index: 1;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       }
+       .blackfilter{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-image: url(image/Object.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: contrast(1.4);
+        z-index:2 ;
+        opacity: 70%;
+       
+       }
+     
+    .smoll{
+        font-size: 1.5vw;
+        z-index: 4;
+    }
+    .health{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .healtha{
+        background-image: url(image/Object\ \(3\).jpg);
+       }
+    .extreme{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    .expeditions{
+        background-image: url(image/Object\ \(1\).jpg);
+    }
+    .game{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .play{
+        background-image: url(image/Object\ \(2\).jpg)
+    }
+    .culture{
+        grid-column: 2/4;
+        grid-row: 2/3; 
+    }
+    .education{
+        background-image: url(image/Object\ \(4\).jpg)
+    }
+    .relaxation{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+    .enjoimet{
+        background-image: url(image/Object\ \(5\).jpg) 
+    }
+    .trevelling{
+        grid-column:3/4;
+        grid-row: 3/4;
+    }
+    .trevel{
+        background-image: url(image/Object\ \(6\).jpg) 
+    }
+    form{
+        margin-top: 5vw;
+    }
+    h4{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 2.3vw;
+        color: #666666;
+        line-height: 1.2em;
+        text-align: center;
+        margin-bottom: 1.7svw;
+    }
+    .information{
+        width:38.8vw ;
+        height:5.2vw ;
+        border: 1px solid #D4D4D4;
+        color:#999999 ;
+        border-radius:0.2vw;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.8vw;
+        text-align: start;
+        padding-left: 1vw;
+        margin-top: 2vw;
+    }
+    .search{
+        height:5.1vw ;
+        width:22.3vw ;
+        background-color:#FF4E50 ;
+        border-radius:2.7vw;
+        border: none;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.8vw;
+        color: white; 
+    }
+    
+    
+    footer{
+        border-color:#FF4E50 ;
+        border-style: solid none none;
+        border-width: 2px;
+        margin-top: 8.9vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5vw;
+        padding-bottom: 2.5vw;
+    }
+       
+    .wrapperfooter{
+        display: flex;
+        width: 89.8vw;
+        height: 50vh;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        &__column{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    h5{
+        font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+        font-size: 2.1vw;
+        color: #FF4E50; 
+    }
+
+    .black{
+        font-size: 1.8vw;
+        font-weight: 700;
+        color: #444444;
+        margin-bottom: 0.76vw;
+        
+    }
+    .light{
+        font-size: 1.2vw;
+        font-weight: 700;
+        color: #CCCCCC;
+        text-align: end;
+        margin-bottom: 0.5vw;
+    }
+    .logo{
+        width:14.2vw ;
+        height:3.1vw;
+    }
+    .thin{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 1.8vw; 
+        color: #CCCCCC;
+        line-height: 3.3vw;
+    }
+
+}
+
+
+@media screen and (max-width: 340px){
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        width: 86.4vw;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        right: 0;
+        left: 0;
+        padding: auto;
+        padding-top: 3.2vw ;
+        z-index: 10;
+    
+    }
+    nav{
+        margin-bottom: 30.6vw;
+    }
+    .nav{
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+          font-size: 4.4vw;
+          color: white; 
+    }
+    .signup{
+        height:11.2vw;
+        width: 28.2vw;
+        border-radius: 12.5vw;
+        border: 2px solid white;
+        background-color: rgba(0, 0, 0, 0); 
+        padding: 0.6vw auto;
+        margin-left: 1.3vw;
+        
+    }
+    .hero{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 168.75vw;
+        background-color: black;
+        z-index: 1;
+    
+        
+    }
+    .filter{
+        display: block;
+        width: 100vw;
+        height: 168.75vw;
+        position: absolute;
+        background-image: url(./image/Bitmap.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: contrast(1.4);
+        z-index:2 ;
+        opacity: 70%;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      
+    }
+    h1{
+      text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 9.4vw;
+        color: white;
+        line-height: 1.2em;
+        z-index: 3;
+    
+    }
+    .about{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 5.6vw;
+        color: white;
+        line-height: 1.2em;
+        text-align: center;
+        margin-top: 2.7vw;
+        margin-bottom: 4.7vw;
+        z-index: 4;
+    }
+    .button{
+        width: 87.5vw;
+        height: 12.5vw;
+        border-radius: 12.5vw;
+        border:1px solid #FF4E50 ;
+        background-color: #FF4E50;
+        z-index: 5;
+        &__text{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 4.4vw;
+            color: white; 
+            text-decoration: none;  
+        }
+    }
+    .work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95vw;
+        background-color: white;
+        margin-top: 11.2vw;
+    }
+    
+    h2{
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 6.8vw;
+        color: #444444;
+        margin-top: 6.2vw;
+        margin-bottom: 4.7vw;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 95vw;
+        justify-content: center;
+        &__cart{
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items: center;
+            height: 75vw;
+            width:93.75vw ;
+            background-image: url(image/Step\ 1\ image\ \(1\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-bottom: 3.1vw;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            width: 78.1vw;
+           margin-bottom: 5vw;
+        }
+        
+    }
+    .step{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 21.8vw;
+        height: 6.25vw;
+        border-radius: 2.7vw;
+        border:1px solid #FF4E50 ;
+        background-color: #FF4E50;
+        margin-bottom: 7.8vw;
+        &__regular{
+            color: white; 
+            text-decoration: none; 
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 3.1vw;
+          
+        }
+    }
+    h3{
+        text-align:start;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 7.5vw;
+        color: white;
+        line-height: 0.6em;
+        margin-bottom: 7.2vw;
+    }
+    .lightroboto{
+        font-family: "Roboto", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+        font-size: 4.4vw;
+        color: white;
+        line-height: 1.2em;
+        letter-spacing: 0.03vw;
+    }
+    .two{
+        background-image: url(image/Step\ 1\ image\ \(2\).jpg);
+    }
+    .three{
+        background-image: url(image/Step\ 1\ image.jpg) 
+    }
+    .wrapp{
+        display: flex;
+        flex-direction: row;
+        width: 73.7vw;
+        justify-content: center;
+        flex-wrap: wrap;
+       margin-top: 4.5vw;
+        &__person {
+            width: 73.75vw;
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+           margin-bottom: 7vw;
+        }
+    }
+    .people{
+        position: relative;
+        display: block;
+        border-radius: 50%;
+        width:37.5vw ;
+        height: 37.5vw;
+        background-image: url(image/Bitmap\ \(3\).jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        &__wrap{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            width: 10vw;
+            height: 10vw;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 5px solid #ffff ;
+            background-color: #FF4E50;
+            
+        }
+    }
+    .green{
+        background-color: #19D4CA;
+    }
+    .orange{
+        background-color: #FFA710;
+    }
+    .blu{
+        background-color: #667DF3;
+    }
+    .mari{
+        background-image: url(image/Bitmap\ \(2\).jpg);
+    }
+    .diana{
+        background-image: url(image/Bitmap\ \(1\).jpg); 
+    }
+    .christopher{
+        background-image: url(image/Bitmap\ \(4\).jpg);
+    }
+    img{
+        width: 5vw;
+        height:5vw;
+    }
+    .gray{
+        color: #444444;
+        font-size: 4.4vw;
+        text-align: center;
+        margin-top: 2.6vw;
+    }
+    .dark{
+        width: auto;
+        height: auto;
+        color: #666666;
+       
+        
+    }
+    .choice{
+        height:12.5vw ;
+        width:87.5vw ;
+        border-radius:12.5vw ;
+        border: 2px solid #FF4E50;
+        background-color: white;
+        margin-top: 11.25vw;
+        &__text{
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 4.3vw;
+            color: #FF4E50; 
+            text-decoration: none; 
+        }
+    }
+    
+    
+    .grid{ width: 93vw;
+        display: grid;
+        grid-template-columns: 93.7vw  93.7vw    ;
+        grid-template-rows:37.5vw 37.5vw 37.5vw 37.5vw 37.5vw 37.5vw 37.5vw ;
+        gap: 3.1vw 0;
+        margin-top: 4.5vw;
+    }
+    .image{
+        position: relative;
+        grid-column: 1/2;
+        grid-row: 1/2; 
+        background-color: black;
+        z-index: 1;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       }
+       .blackfilter{
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        background-image: url(image/Object.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: contrast(1.4);
+        z-index:2 ;
+        opacity: 70%;
+       
+       }
+     
+    .smoll{
+        font-size: 6.8vw;
+        z-index: 4;
+    }
+    .health{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .healtha{
+        background-image: url(image/Object\ \(3\).jpg);
+       }
+    .extreme{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .expeditions{
+        background-image: url(image/Object\ \(1\).jpg);
+    }
+    .game{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .play{
+        background-image: url(image/Object\ \(2\).jpg)
+    }
+    .culture{
+        grid-column:1/2;
+        grid-row: 5/6; 
+    }
+    .education{
+        background-image: url(image/Object\ \(4\).jpg)
+    }
+    .relaxation{
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .enjoimet{
+        background-image: url(image/Object\ \(5\).jpg) 
+    }
+    .trevelling{
+        grid-column:1/2;
+        grid-row: 7/8;
+    }
+    .trevel{
+        background-image: url(image/Object\ \(6\).jpg) 
+    }
+    .wraph2{
+        display: flex;
+        width: 66.8vw;
+
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5vw;
+    }
+    h4{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 5.6vw;
+        color: #666666;
+        line-height: 1.2em;
+        text-align: center;
+        margin-bottom: 4.7svw;
+    }
+    .information{
+        width:87.5vw ;
+        height:12.5vw ;
+        border: 1px solid #D4D4D4;
+        color:#999999 ;
+        border-radius:0.9vw;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 4.4vw;
+        text-align: start;
+        padding-left: 4.7vw;
+        margin-top: 0;
+        margin-bottom: 3.1vw;
+    }
+    .search{
+        width:87.5vw ;
+        height:12.5vw ;
+        background-color:#FF4E50 ;
+        border-radius:12.5vw;
+        border: none;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 4.4vw;
+        color: white; 
+    }
+    
+    footer{
+        border-color:#FF4E50 ;
+        border-style: solid none none;
+        border-width: 2px;
+        margin-top: 12.5vw;
+        display: flex;
+        flex-direction: column;
+        padding-top: 5vw;
+        padding-bottom: 2.5vw;
+        
+    }
+    .wrapperfooter{
+        display: flex;
+        width: 61vw;
+        height: 50vh;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    
+        &__column{
+            display: flex;
+            width: 61vw;
+            height: auto;
+            
+        }
+       }
+    
+    h5{
+        font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+        font-size: 5vw;
+        color: #FF4E50; 
+        margin-bottom: 4vw;
+        text-align: center;
+    }
+
+    .black{
+        font-size: 4.4vw;
+        font-weight: 700;
+        color: #444444;
+        margin-bottom: 2vw;
+        
+    }
+    .light{
+        font-size: 3.1vw;
+        font-weight: 700;
+        color: #CCCCCC;
+        text-align:center;
+        margin-bottom: 0.5vw;
+    }
+    .logo{
+        width:34.4vw ;
+        height:7.5vw;
+        margin: 2vw auto;
+    }
+    .horizontalDivMobile{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .wrapthin{
+        display: flex;
+       
+       
+    }
+    .thin{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 4.4vw; 
+        color: #CCCCCC;
+        line-height: 8.1vw;
+    }
+
+}
+
+
+
+
+    
